@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="website:publisher" content="https://kvmmissionindia.org" />
+    <meta property="website:section" content="KVM Helping details here" />
+    <meta property="website:tag" content="KVM" />
+    <meta property="og:image" content="https://lhs_campustourn image of kvm " />
+    <meta property="og:image:secure_url" content="https://lhs_campustourn image of kvm" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Your Full Service Marketing Specialists" />
+    <meta property="og:locale" content="en_GB" />
+    <link rel="canonical" href="https://kvmmissionindia.org" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/lhs_logo.png">
+    <link rel="apple-touch-icon" href="../images/lhs_logo.png" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/css/uikit.min.css" />
+    
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/campustour.css">
+    <link rel="stylesheet" href="../css/ourcommunity.css">
+    
+    
+        <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/js/uikit-icons.min.js"></script>
+    </head>
+    <?php
+        $title = "Php Header";
+        include "header.php";
+    ?>
+
+
+
+<body>
+    <div class="lhs-navbar"
+        uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: ! *; offset: 0">
+
+        <nav class="uk-navbar-container uk-light">
+            <div class="uk-container uk-container-large">
+                <div class="uk-navbar uk-margin-top">
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-item uk-logo lhs_logo" href="#slider" uk-scroll>
+                            <img src="../images/lhs_logo.png">
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right ">
+                        <ul class="uk-navbar-nav lhs-navBg uk-flex-middle uk-visible@m"
+                            uk-scrollspy-nav="closest: li;scroll: true; offset:50;">
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/index.html">
+                                    <span class="" data-text="Home"></span> Home
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/admissions.html">
+                                    <span class="" data-text="Admissions"></span> Admissions
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/campustour.html">
+                                    <span class="" data-text="Campus Tours"></span> Campus Tours
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/ourcommunity.html">
+                                    <span class="" data-text="Our Community"></span> Our Community
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/aboutus.html">
+                                    <span class="" data-text="About us"></span> About us
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/contactus.html">
+                                    <span class="" data-text="Contact Us"></span> Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                        <a href=""
+                                class="uk-navbar-toggle uk-navbar-toggle-icon uk-margin-small-left uk-icon lhs-navBg uk-flex-middle uk-hidden@m"
+                                uk-navbar-toggle-icon="ratio: 1.3" uk-toggle="target: #offcanvas-usage"></a>
+                    </div>
+                    <div class="uk-offcanvas-content">
+                        <div id="offcanvas-usage" class="ds-sidebar" uk-offcanvas="flip: true; overlay: true">
+                            <div class="uk-offcanvas-bar uk-padding-remove uk-width-1-1">
+                                <button class="uk-offcanvas-close uk-margin-left uk-padding-small" type="button" uk-close="ratio: 2"></button>
+                                <div class="uk-flex uk-flex-middle" uk-height-viewport>
+                                    <div class="uk-width-1-1 ds-offcanvas-list">
+                                        <div class="uk-padding">
+                                            <ul class="uk-list uk-sidebar-list ds-nav-text uk-text-left uk-margin-large-top" uk-scrollspy-nav="closest: li;scroll: true; offset: 0;">
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/index.html" class="uk-close">Home</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/admissions.html" class="uk-close">Admissions</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/campustour.html" class="uk-close">Campus Tours</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/ourcommunity.html" class="uk-close">Our Community</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/aboutus.html" class="uk-close">About us</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/contactus.html" class="uk-close">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section>
+        <div class="lhs-ourcommunitybg">
+            <div class="lhs-ourcommunitynoverlay"></div>
+            <div class="lhs-ourcommunitynoverlay_bottom">
+                <div class="lhs-ourcommunitynoverlay_title_wrap">
+                    <div class="uk-container lhs-ourcommunitynoverlay_title">
+                        Our Community
+                    </div>
+                </div>
+                <div class="lhs-ourcommunitynoverlay_banner uk-overlay uk-light uk-position-bottom">
+                    <div class="uk-container uk-container-xlarge">
+                        <div class="uk-flex uk-flex-right">
+                            <div class="uk-flex uk-flex-between uk-width-1-6@m">
+                                <a href="" class="uk-button uk-button-text uk-flex uk-flex-middle">
+                                    <div class="lhs-ourcommunitynoverlay_bottomText">Call</div>
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+
+                                <a href="" class="uk-button uk-button-text uk-flex uk-flex-middle">
+                                    <div class="lhs-ourcommunitynoverlay_bottomText">Visit</div>
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="uk-container">
+            <div class="uk-padding-large uk-padding-remove-horizontal">
+                <section>
+                    <div class="ourcommunitySubtitle">
+                        Development and Support
+                    </div>
+                    <div class="lhs-ourcommunitytitlepara">
+                        School Community Confederation (SCC)
+                    </div>
+                    <div class="lhs-ourcommunitypara">
+                        SCC is committed to promoting and building a strong CIS community through an active partnership
+                        between
+                        the school and the parents.
+                        SCC is dedicated to providing the best possible social environment for our children and the school
+                        community. To achieve this, SCA works passionately with parents,
+                        teachers, students and the entire CIS community to achieve our goals.
+                    </div>
+                </section>
+    
+                <section>
+                    <div class="uk-container uk-padding-large uk-padding-remove-horizontal">
+                        <div class="uk-card lhs-ourcommunitycardbg">
+                            <div class="lhs-ourcommunity-underlinetext">
+                                Teacher Development and Support
+                                <svg aria-hidden="true" data-draw-path="" class="lhs-ourcommunity-underline"
+                                    viewBox="0 0 281 15" preserveAspectRatio="none">
+                                    <g>
+                                        <clipPath id="underline-clip-path">
+                                            <path
+                                                d="M276.313091,3.20249 L276.678231,3.20249 C279.065081,3.20249 281,5.171841 281,7.601159 C281,10.030478 279.065081,11.999829 276.678231,11.999829 L275.496591,11.999829 C275.285651,11.999829 275.078231,11.984447 274.875371,11.954724 L267.667841,11.654465 L255.545031,11.143322 C212.801301,9.383943 177.543081,8.400874 149.772861,8.194006 L145.379491,8.167386 L141.594211,8.153788 C140.309651,8.150531 139.002271,8.14855 137.672091,8.147844 L130.725421,8.155219 C99.3912711,8.23563 56.7515711,8.948524 2.81021112,10.294003 C2.74165112,10.301174 2.67239112,10.304342 2.60241112,10.304342 L2.31018112,10.304342 C1.03430112,10.304342 0,9.251634 0,7.953053 C0,7.88696 0,7.821503 0.00793112323,7.75679 L0.0164011232,7.830067 C-0.104068877,6.979746 0.449601123,6.192605 1.33238112,5.822722 C1.56982112,5.709173 1.82943112,5.63589 2.10275112,5.611118 L2.31579112,5.600829 L4.19304112,5.428365 L7.18219112,5.162675 C39.7376211,2.334936 83.2546211,0.664999 137.749211,0.149812 L144.692081,0.091069 C152.490231,0.033003 160.049911,0.002525 167.373901,0 L173.388481,0.004312 C215.593441,0.080248 249.713441,1.121736 276.313091,3.20249 Z"
+                                                style="mix-blend-mode: darken;"></path>
+                                        </clipPath>
+                                        <path class="underline-path color1" pathLength="1"
+                                            d="M6.57,8.17c107.81-3.26,287-.74,291.81-.74"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="uk-margin-top">
+                                Teachers should be provided the supplies and support they need to do their job and grow as
+                                educators. At
+                                Believe, we cover all material expenses and unlimited copies at no cost to teachers and
+                                celebrate our
+                                educators for being their authentic selves. This way, our teachers can focus on their
+                                mission of
+                                providing an excellent education and honing their craft.
+                            </div>
+                        </div>
+                        <div class="uk-card lhs-ourcommunitycardbg uk-margin-medium-top">
+                            <div class="lhs-ourcommunity-underlinetext">
+                                Believe Teacher Fellowship Program
+                                <svg aria-hidden="true" data-draw-path="" class="lhs-ourcommunity-underline"
+                                    viewBox="0 0 281 15" preserveAspectRatio="none">
+                                    <g>
+                                        <clipPath id="underline-clip-path">
+                                            <path
+                                                d="M276.313091,3.20249 L276.678231,3.20249 C279.065081,3.20249 281,5.171841 281,7.601159 C281,10.030478 279.065081,11.999829 276.678231,11.999829 L275.496591,11.999829 C275.285651,11.999829 275.078231,11.984447 274.875371,11.954724 L267.667841,11.654465 L255.545031,11.143322 C212.801301,9.383943 177.543081,8.400874 149.772861,8.194006 L145.379491,8.167386 L141.594211,8.153788 C140.309651,8.150531 139.002271,8.14855 137.672091,8.147844 L130.725421,8.155219 C99.3912711,8.23563 56.7515711,8.948524 2.81021112,10.294003 C2.74165112,10.301174 2.67239112,10.304342 2.60241112,10.304342 L2.31018112,10.304342 C1.03430112,10.304342 0,9.251634 0,7.953053 C0,7.88696 0,7.821503 0.00793112323,7.75679 L0.0164011232,7.830067 C-0.104068877,6.979746 0.449601123,6.192605 1.33238112,5.822722 C1.56982112,5.709173 1.82943112,5.63589 2.10275112,5.611118 L2.31579112,5.600829 L4.19304112,5.428365 L7.18219112,5.162675 C39.7376211,2.334936 83.2546211,0.664999 137.749211,0.149812 L144.692081,0.091069 C152.490231,0.033003 160.049911,0.002525 167.373901,0 L173.388481,0.004312 C215.593441,0.080248 249.713441,1.121736 276.313091,3.20249 Z"
+                                                style="mix-blend-mode: darken;"></path>
+                                        </clipPath>
+                                        <path class="underline-path color3" pathLength="1"
+                                            d="M6.57,8.17c107.81-3.26,287-.74,291.81-.74"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="uk-margin-top">
+                                The Believe Teaching Fellowship (BTF) Fund is an investment in new and aspiring teachers who
+                                want to seek their license. Believe covers the cost of this education and supports them on
+                                their journey.
+                                We currently have several full-time teachers and current members of our Leadership Team who
+                                are alumni of the BTF
+                            </div>
+                        </div>
+                        <div class="uk-card lhs-ourcommunitycardbg uk-margin-medium-top">
+                            <div class="lhs-ourcommunity-underlinetext">
+                                Maternity/Paternity Leave
+                                <svg aria-hidden="true" data-draw-path="" class="lhs-ourcommunity-underline"
+                                    viewBox="0 0 281 15" preserveAspectRatio="none">
+                                    <g>
+                                        <clipPath id="underline-clip-path">
+                                            <path
+                                                d="M276.313091,3.20249 L276.678231,3.20249 C279.065081,3.20249 281,5.171841 281,7.601159 C281,10.030478 279.065081,11.999829 276.678231,11.999829 L275.496591,11.999829 C275.285651,11.999829 275.078231,11.984447 274.875371,11.954724 L267.667841,11.654465 L255.545031,11.143322 C212.801301,9.383943 177.543081,8.400874 149.772861,8.194006 L145.379491,8.167386 L141.594211,8.153788 C140.309651,8.150531 139.002271,8.14855 137.672091,8.147844 L130.725421,8.155219 C99.3912711,8.23563 56.7515711,8.948524 2.81021112,10.294003 C2.74165112,10.301174 2.67239112,10.304342 2.60241112,10.304342 L2.31018112,10.304342 C1.03430112,10.304342 0,9.251634 0,7.953053 C0,7.88696 0,7.821503 0.00793112323,7.75679 L0.0164011232,7.830067 C-0.104068877,6.979746 0.449601123,6.192605 1.33238112,5.822722 C1.56982112,5.709173 1.82943112,5.63589 2.10275112,5.611118 L2.31579112,5.600829 L4.19304112,5.428365 L7.18219112,5.162675 C39.7376211,2.334936 83.2546211,0.664999 137.749211,0.149812 L144.692081,0.091069 C152.490231,0.033003 160.049911,0.002525 167.373901,0 L173.388481,0.004312 C215.593441,0.080248 249.713441,1.121736 276.313091,3.20249 Z"
+                                                style="mix-blend-mode: darken;"></path>
+                                        </clipPath>
+                                        <path class="underline-path color2" pathLength="1"
+                                            d="M6.57,8.17c107.81-3.26,287-.74,291.81-.74"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="uk-margin-top">
+                                We believe that teachers have the right to start their families without incurring a loss of
+                                income.
+                                We offer paid maternity and paternity leave to any staff member welcoming a new child to
+                                their family.
+                            </div>
+                        </div>
+                        <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-2@s uk-flex-center uk-margin-medium-top uk-grid-match" uk-grid>
+                            <div>
+                                <div class="lhs-ourcommunitycardbg lhs-ourcommunitycardstroke1">
+                                    The Lourdes <b>Parent Teacher Association (PTA)</b> inspires involvement and commitment
+                                    to support
+                                    the school community. Towards that end, teachers and administrators collaborate with the
+                                    <b>Parent Teacher Association (PTA)</b> (PTA) executive and parent class representatives
+                                    to assist the
+                                    <b>Parent Teacher Association (PTA)</b> (PTA) in its defined role.
+                                </div>
+                            </div>
+                            <div>
+                                <div class="lhs-ourcommunitycardbg lhs-ourcommunitycardstroke2">
+                                    The Lourdes <b>Parent Teacher Association (PTA)</b> (PTA) aligns its choice of
+                                    activities and causes that
+                                    it supports with the IB Learner Profile. They believe that the values taught at school
+                                    must be exhibited by all members of the community, and therefore use the IB Learner
+                                    Profile as a guide to action.
+                                </div>
+                            </div>
+                            <div>
+                                <div class="lhs-ourcommunitycardbg lhs-ourcommunitycardstroke3">
+                                    The annual Back to School, organised by the <b>Parent Teacher Association (PTA)</b>
+                                    (PTA), is held
+                                    in September to welcome new families into the Lourdes community. There’s plenty of
+                                    music and beverages. Parents, teachers and students get a chance to
+                                    enjoy the day in a relaxed and fun environment.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="uk-margin-medium-bottom uk-margin-medium-top">
+                    <div class="uk-text-center">
+                        <div class="lhs-ourcommunitytitlepara">
+                            COMMUNITY EVENTS
+                        </div>
+                        <div class="uk-margin-top">
+                            LHS school community events are exciting opportunities for students, parents, and teachers to come
+                            together and engage in a variety of activities outside the classroom. For parents and teachers,
+                            community events offer a chance to collaborate, network, and support each other in creating a
+                            positive learning environment for students. Join us for a fun and enriching experience that
+                            strengthens our school community!
+                        </div>
+                    </div>
+                    <div class="uk-margin-top">
+                        <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-2@s uk-margin-medium-top uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-text-center">
+                                    <div class="uk-inline-clip uk-transition-toggle lhs-ourcommunitycard-overlayhide" tabindex="0">
+                                        <img src="../images/description/description_2.jpeg" width="1800" height="1200" alt="">
+                                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                            <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                            <p class="uk-h4 uk-margin-remove">Bottom</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-text-center">
+                                    <div class="uk-inline-clip uk-transition-toggle lhs-ourcommunitycard-overlayhide" tabindex="0">
+                                        <img src="../images/description/description_2.jpeg" width="1800" height="1200" alt="">
+                                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                            <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                            <p class="uk-h4 uk-margin-remove">Bottomasd</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-text-center">
+                                    <div class="uk-inline-clip uk-transition-toggle lhs-ourcommunitycard-overlayhide" tabindex="0">
+                                        <img src="../images/description/description_2.jpeg" width="1800" height="1200" alt="">
+                                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                            <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                            <p class="uk-h4 uk-margin-remove">Bottomasdff</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-text-center">
+                                    <div class="uk-inline-clip uk-transition-toggle lhs-ourcommunitycard-overlayhide" tabindex="0">
+                                        <img src="../images/description/description_2.jpeg" width="1800" height="1200" alt="">
+                                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                            <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                            <p class="uk-h4 uk-margin-remove">Bottom</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-text-center">
+                                    <div class="uk-inline-clip uk-transition-toggle lhs-ourcommunitycard-overlayhide" tabindex="0">
+                                        <img src="../images/description/description_2.jpeg" width="1800" height="1200" alt="">
+                                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                            <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                            <p class="uk-h4 uk-margin-remove">Bottomasd</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-text-center">
+                                    <div class="uk-inline-clip uk-transition-toggle lhs-ourcommunitycard-overlayhide" tabindex="0">
+                                        <img src="../images/description/description_2.jpeg" width="1800" height="1200" alt="">
+                                        <div class="uk-overlay uk-overlay-primary uk-position-bottom">
+                                            <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                            <p class="uk-h4 uk-margin-remove">Bottomasdff</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section>
+                    <div class="uk-text-center uk-margin-medium-bottom uk-margin-medium-top">
+                        <div class="lhs-ourcommunitytitlepara">
+                            Message from the Headmistress
+                        </div>
+                    </div>
+                    <div class="uk-grid uk-margin-large-top uk-grid-match" uk-grid>
+                        <div class="uk-width-1-2@m">
+                            <div class="lhs-Headmistress"></div>
+                        </div>
+                        <div class="uk-width-1-2@m">
+                            <div>
+                                <div class="lhs-Headmistresstitle">
+                                    Secretary’s message
+                                </div>
+                                <div class="lhs-margin10 uk-margin-top">
+                                    A school is a place entangling learning and joy, combining knowledge and lessons of life for an enriched tomorrow.
+                                    <br>
+                                    Education must aim on aspects, which contribute to the development of the young minds as they step into the contemporary world.
+                                    <br>
+                                    Our motto is to provide a genre by giving the environment where
+                                    the children can blossom with their utmost potential, knowledge and inquisition in the most magnificent and creative way.
+                                    <br>
+                                    A committed and supportive management, dedicated teachers, caring and co- operative parents blend harmoniously to create a child centric school.
+                                </div>
+                                <div class="lhs-HeadmistressName">
+                                    Mrs. Savitha Suresh - School Headmistress
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="lhs-footerbg uk-padding-large">
+            <div class="uk-container uk-container-xlarge">
+                <div class="uk-grid uk-flex-center" uk-grid>
+                    <div class="uk-width-1-5@m uk-width-1-2@s lhs-footer-align">
+                        <div class="uk-margin-small-bottom uk-text-bold">
+                            Address
+                        </div>
+                        <div class="lhs-footertext">
+                            #104, 1st Main Road, J.B. Kaval, Nandini Layout, Bengaluru, Bengaluru, Karnataka 560096
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@m uk-width-1-2@s lhs-footer-align">
+                        <div class="uk-margin-small-bottom uk-text-bold">
+                            Contact
+                        </div>
+                        <div class="lhs-footertext">
+                            Phone: <a href="" class="uk-link-reset">080-2347 1485</a> <br>
+                            Email: <a href="" class="uk-link-reset">lourdeshsnlo@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@l uk-width-1-2">
+                        <a class="uk-navbar-item uk-logo lhs-footer_logo" href="#slider">
+                            <img src="../images/lhs_logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-text-center lhs-footertext uk-margin-medium-top uk-width-1-2@m uk-margin-auto">
+                    At Lourdes High School students are developed with courage, self-confidence, leadership skills, and
+                    sportsmanship.
+                    An economically independent and vibrant community that consistently provides the highest standards of excellence and 
+                    innovation in learning within a stimulating nurturing environment.
+                </div>
+
+            </div>
+        </div>
+        <div class="lhs-footerbg2">
+            <div class="uk-grid uk-flex-between" uk-grid>
+                <div class="uk-grid uk-grid-collapse uk-flex-middle" uk-grid>
+                    <div>
+                        FOLLOW US ONLINE!
+                    </div>
+                    <div class="lhs-footer-icon uk-flex uk-margin-left">
+                        <div>
+                            <a href="" class="fab fa-facebook uk-link-reset"></a>
+                        </div>
+                        <div class="uk-margin-left">
+                            <a href="" class="fab fa-youtube uk-link-reset"></a>
+                        </div>
+                        <div class="uk-margin-left">
+                            <a href="" class="fab fa-instagram uk-link-reset"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        ©
+                        <script
+                            type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+                        <b>Lourds High School</b>. All rights reserved.
+                        <a class="uk-button uk-button-text lhs-footer-color" href="" target="_blank">Website by stewart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+</body>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta property="og:type" content="website" />
+    <meta property="website:publisher" content="https://kvmmissionindia.org" />
+    <meta property="website:section" content="KVM Helping details here" />
+    <meta property="website:tag" content="KVM" />
+    <meta property="og:image" content="https://lhs_campustourn image of kvm " />
+    <meta property="og:image:secure_url" content="https://lhs_campustourn image of kvm" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Your Full Service Marketing Specialists" />
+    <meta property="og:locale" content="en_GB" />
+    <link rel="canonical" href="https://kvmmissionindia.org" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/lhs_logo.png">
+    <link rel="apple-touch-icon" href="../images/lhs_logo.png" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/css/uikit.min.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contactus.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/js/uikit-icons.min.js"></script>
+</head>
+<?php
+    $title = "Php Header";
+    include "header.php";
+?>
+
+<body>
+    <div class="lhs-navbar"
+        uk-sticky="start: 170; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; end: ! *; offset: 0">
+
+        <nav class="uk-navbar-container uk-light">
+            <div class="uk-container uk-container-large">
+                <div class="uk-navbar uk-margin-top">
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-item uk-logo lhs_logo" href="#slider" uk-scroll>
+                            <img src="../images/lhs_logo.png">
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right ">
+                        <ul class="uk-navbar-nav lhs-navBg uk-flex-middle uk-visible@m"
+                            uk-scrollspy-nav="closest: li;scroll: true; offset:50;">
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/index.html">
+                                    <span class="" data-text="Home"></span> Home
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/admissions.html">
+                                    <span class="" data-text="Admissions"></span> Admissions
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/campustour.html">
+                                    <span class="" data-text="Campus Tours"></span> Campus Tours
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/ourcommunity.html">
+                                    <span class="" data-text="Our Community"></span> Our Community
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/aboutus.html">
+                                    <span class="" data-text="About us"></span> About us
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="lhs-navButtonhover" href="https://wilfredstewart.github.io/lhs/html/contactus.html">
+                                    <span class="" data-text="Contact Us"></span> Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                        <a href=""
+                                class="uk-navbar-toggle uk-navbar-toggle-icon uk-margin-small-left uk-icon lhs-navBg uk-flex-middle uk-hidden@m"
+                                uk-navbar-toggle-icon="ratio: 1.3" uk-toggle="target: #offcanvas-sidebar"></a>
+                    </div>
+                    <div class="uk-offcanvas-content">
+                        <div id="offcanvas-sidebar" class="ds-sidebar" uk-offcanvas="flip: true; overlay: true">
+                            <div class="uk-offcanvas-bar uk-padding-remove uk-width-1-1">
+                                <button class="uk-offcanvas-close uk-margin-left uk-padding-small" type="button" uk-close="ratio: 2"></button>
+                                <div class="uk-flex uk-flex-middle" uk-height-viewport>
+                                    <div class="uk-width-1-1 ds-offcanvas-list">
+                                        <div class="uk-padding">
+                                            <ul class="uk-list uk-sidebar-list ds-nav-text uk-text-left uk-margin-large-top" uk-scrollspy-nav="closest: li;scroll: true; offset: 0;">
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/index.html" class="uk-close">Home</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/admissions.html" class="uk-close">Admissions</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/campustour.html" class="uk-close">Campus Tours</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/ourcommunity.html" class="uk-close">Our Community</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/aboutus.html" class="uk-close">About us</a></li>
+                                                <li class="uk-margin-small-bottom"><a href="https://wilfredstewart.github.io/lhs/html/contactus.html" class="uk-close">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section>
+        <div class="lhs-communitybg">
+            <div class="lhs-communitynoverlay"></div>
+            <div class="lhs-communitynoverlay_bottom">
+                <div class="lhs-communitynoverlay_title_wrap">
+                    <div class="uk-container lhs-communitynoverlay_title">
+                        Get In Touch
+                    </div>
+                </div>
+                <div class="lhs-communitynoverlay_banner uk-overlay uk-light uk-position-bottom">
+                    <div class="uk-container uk-container-xlarge">
+                        <div class="uk-flex uk-flex-right">
+                            <div class="uk-flex uk-flex-between uk-width-1-6@m">
+                                <a href="" class="uk-button uk-button-text uk-flex uk-flex-middle">
+                                    <div class="lhs-communitynoverlay_bottomText">Call</div>
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+
+                                <a href="" class="uk-button uk-button-text uk-flex uk-flex-middle">
+                                    <div class="lhs-communitynoverlay_bottomText">Visit</div>
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="uk-container">
+            <div class="uk-padding-large uk-padding-remove-horizontal">
+                <div class="uk-grid uk-grid-match" uk-grid>
+                    <div class="uk-width-1-2@m">
+                        <div class="uk-flex lhs-contactflex">
+                            <div class="lhs-contactTitle">
+                                Have a question or just need to get in touch?
+                            </div>
+                            <div class="lhs-contactsubTitle">
+                                Fill out the form & we’ll get back to you!
+                            </div>
+                            <div class="lhs-contactnumTitle">
+                                Call our main office: <span class="uk-text-nowrap">080-2347 1485</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@m">
+                        <div class="lhs-contactBg">
+                            <form>
+
+                                <div class="uk-grid lhsMargin">
+                                    <div class=" uk-width-1-2@s lhs-contactmargin45">
+                                        <div class="lhs-inputparent">
+                                            <input type="text" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Name *</label>
+                                        </div>
+                                    </div>
+                                    <div class=" uk-width-1-2@s">
+                                        <div class="lhs-inputparent">
+                                            <input type="text" required>
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label>Last Name *</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lhs-inputparent ">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Email</label>
+                                </div>
+    
+                                <div class="lhs-inputparent ">
+                                    <textarea type="text" required class="uk-textarea" rows="5"
+                                        aria-label="Textarea"></textarea>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Textarea</label>
+                                </div>
+    
+                                <div>
+                                    <a href="" class="lhs-submit"  type="submit"> Submit</a>
+                                </div>
+    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section>
+        <div class="lhs-footerbg uk-padding-large">
+            <div class="uk-container uk-container-xlarge">
+                <div class="uk-grid uk-flex-center" uk-grid>
+                    <div class="uk-width-1-5@m uk-width-1-2@s lhs-footer-align">
+                        <div class="uk-margin-small-bottom uk-text-bold">
+                            Address
+                        </div>
+                        <div class="lhs-footertext">
+                            #104, 1st Main Road, J.B. Kaval, Nandini Layout, Bengaluru, Bengaluru, Karnataka 560096
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@m uk-width-1-2@s lhs-footer-align">
+                        <div class="uk-margin-small-bottom uk-text-bold">
+                            Contact
+                        </div>
+                        <div class="lhs-footertext">
+                            Phone: <a href="" class="uk-link-reset">080-2347 1485</a> <br>
+                            Email: <a href="" class="uk-link-reset">lourdeshsnlo@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@l uk-width-1-2">
+                        <a class="uk-navbar-item uk-logo lhs-footer_logo" href="#slider">
+                            <img src="../images/lhs_logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-text-center lhs-footertext uk-margin-medium-top uk-width-1-2@m uk-margin-auto">
+                    At Lourdes High School students are developed with courage, self-confidence, leadership skills, and
+                    sportsmanship.
+                    An economically independent and vibrant community that consistently provides the highest standards of excellence and 
+                    innovation in learning within a stimulating nurturing environment.
+                </div>
+
+            </div>
+        </div>
+        <div class="lhs-footerbg2">
+            <div class="uk-grid uk-flex-between" uk-grid>
+                <div class="uk-grid uk-grid-collapse uk-flex-middle" uk-grid>
+                    <div>
+                        FOLLOW US ONLINE!
+                    </div>
+                    <div class="lhs-footer-icon uk-flex uk-margin-left">
+                        <div>
+                            <a href="" class="fab fa-facebook uk-link-reset"></a>
+                        </div>
+                        <div class="uk-margin-left">
+                            <a href="" class="fab fa-youtube uk-link-reset"></a>
+                        </div>
+                        <div class="uk-margin-left">
+                            <a href="" class="fab fa-instagram uk-link-reset"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        ©
+                        <script
+                            type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+                        <b>Lourds High School</b>. All rights reserved.
+                        <a class="uk-button uk-button-text lhs-footer-color" href="" target="_blank">Website by stewart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

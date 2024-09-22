@@ -1,0 +1,238 @@
+.lhs-ourcommunitybg {
+    background-image: url(../images/admission/img1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 663px;
+    position: relative;
+    color: #ffffff;
+}
+
+.lhs-ourcommunitynoverlay {
+    background-color: #273656;
+    opacity: .5;
+    mix-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.lhs-ourcommunitynoverlay_bottom {
+    width: 100%;
+}
+.lhs-ourcommunitynoverlay_title_wrap {
+    position: absolute;
+    padding-bottom: 87px;
+    left: 0;
+    width: 100%;
+    bottom: 66px;
+    color: #fff;
+}
+
+.lhs-ourcommunitynoverlay_title {
+    font-family: "Platypi", serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 74px;
+}
+.lhs-ourcommunitynoverlay_banner {
+    display: inline-table;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    letter-spacing: .05em;
+    height: 66px;
+    background-color: rgb(39 54 86 / 40%);
+}
+.lhs-ourcommunitynoverlay_bottomText {
+    font-weight: 600;
+    color: #fff !important;
+    text-transform: capitalize !important;
+    font-size: 17px;
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
+.lhs-ourcommunitytitlepara{
+    font-family: "DM Sans", sans-serif;
+    font-size: 36px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.lhs-ourcommunitySubtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+}
+
+.lhs-ourcommunitypara{
+    font-family: "Platypi", serif;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.lhs-ourcommunitycardbg{
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #f5f5f7 !important;
+    color: #1d1d1f;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.lhs-ourcommunity-underline {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -16%;
+    z-index: -1;
+    max-height: 12px;
+    min-height: 9px;
+}
+
+.lhs-ourcommunity-underlinetext {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    z-index: 1;
+    font-size: 30px;
+    font-family: "Platypi", serif;
+}
+
+.lhs-ourcommunity-underline .underline-path.color1 {
+    stroke: #ffa950;
+}
+.lhs-ourcommunity-underline .underline-path.color2 {
+    stroke: #6bb7ff;
+}
+.lhs-ourcommunity-underline .underline-path.color3 {
+    stroke: #86f18d;
+}
+
+.lhs-ourcommunity-underline .underline-path {
+    clip-path: url(#underline-clip-path);
+    fill: none;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 12px;
+    stroke-dashoffset: 1.1;
+    transition: stroke-dashoffset var(--highlight-duration) ease-out;
+    transition-delay: var(--highlight-delay, 0);
+}
+
+.lhs-ourcommunitycardstroke1{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .25), inset 0 5px 0 #a438f7;
+}
+.lhs-ourcommunitycardstroke2{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .25), inset 0 5px 0 #f73847;
+}
+.lhs-ourcommunitycardstroke3{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .25), inset 0 5px 0 #f7d638;
+}
+
+.lhs-ourcommunitycard-overlayhide:hover .uk-overlay-primary{
+    display: none;
+}
+
+.lhs-HeadmistressName{
+    font-size: 20px;
+    font-family: "Platypi", serif;
+    margin-top: 90px;
+    position: relative;
+    font-weight: 600;
+}
+
+.lhs-HeadmistressName::before {
+    position: absolute;
+    top: -29px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f6eb61;
+    content: "";
+}
+
+.lhs-Headmistresstitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 27px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.lhs-Headmistress{
+    width: 100%;
+    /* height: 680px; */
+    background-image: url(../images/admission/secretary.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (max-width: 1200px) {
+    .lhs-ourcommunitynoverlay_title {
+        font-size: 50px;
+    }
+    .lhs-ourcommunitytitlepara {
+        font-size: 30px;
+    }
+    .lhs-ourcommunitypara {
+        font-size: 20px;
+    }
+    .lhs-ourcommunity-underlinetext{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 960px) {
+    .lhs-ourcommunitynoverlay_title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .lhs-ourcommunitytitlepara {
+        font-size: 28px;
+    }
+    .lhs-ourcommunitypara {
+        font-size: 18px;
+    }
+    .lhs-ourcommunity-underlinetext {
+        font-size: 26px;
+    }
+    .lhs-Headmistress{
+        height: 680px;
+    }
+    .lhs-Headmistresstitle {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .lhs-margin10{
+        margin-top: 10px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .lhs-ourcommunitynoverlay_title_wrap {
+        padding-bottom: 60px;
+    }
+    .lhs-ourcommunity-underlinetext {
+        font-size: 22px;
+    }
+    .lhs-ourcommunitytitlepara {
+        font-size: 21px;
+    }
+    .lhs-Headmistress{
+        height: 400px;
+    }
+    .lhs-Headmistresstitle {
+        font-size: 22px;
+    }
+}
